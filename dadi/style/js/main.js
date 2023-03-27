@@ -16,11 +16,9 @@ for (let x = 1; x <= 10; x++)  {
     if(numeroComputer < numeroGiocatore) {
         console.log  ("hai vinto!")
         punteggioGiocatore = punteggioGiocatore + 1;
-
     } else if (numeroComputer > numeroGiocatore) {
         console.log ("hai perso!")
         punteggioComputer = punteggioComputer + 1;
-
     } else {
        console.log  ("pareggio!");
     }
@@ -34,9 +32,7 @@ for (let x = 1; x <= 10; x++)  {
     }  else {
         x = 10
     }
-
-
- }
+}
 
  if( punteggioComputer>punteggioGiocatore) {
     console.log ("HAI PERSO!!")
