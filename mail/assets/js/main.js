@@ -2,19 +2,47 @@ let listaUtenti = ["leonardo@gmail.com", "salame@gmail.com", "boolean@gmail.com"
 
 console.log (listaUtenti[1]);
  
-let controllore = false;
-let nome = "leonardo@gmail.com";
+document.getElementById("cerca").addEventListener('click', function() {
+ 
 
-for (let x = 0; x < listaUtenti.length; x++) {
+    let controllore = false;
+    let nome = document.getElementById("barraEmail").value;
 
-    if (listaUtenti[x] === nome){
-        controllore = true
-  }
-}
+    for (let x = 0; x < listaUtenti.length; x++) {
 
-if (controllore) {
-    console.log ("daje")
-} else {
-    console.log ("no")
-}
+        if (listaUtenti[x] === nome){
+            controllore = true
+      }
+    }
+
+    if (controllore) {
+        alert("l'email esiste e stai per essere reindirizzato da qualche parte")
+    } else {
+        alert("l'email non esiste iscriviti!");
+        document.getElementById("cerca").classList.add("d-none")
+        document.getElementById("entra").classList.remove("d-none")
+
+
+        
+    }
+})
+
+document.getElementById("entra").addEventListener('click', function() {
+    let nome = document.getElementById("barraEmail").value;
+    listaUtenti.push (nome)
+
+    for (let x = 0; x < listaUtenti.length; x++) {
+
+        if (listaUtenti[x] === nome){
+            document.getElementById("entra").classList.add("d-none")
+            alert("congratulazione sei entrato enll'array!")
+        document.getElementById("cerca").classList.remove("d-none")
+            
+      }
+    }
+
+
+})
+
+
   

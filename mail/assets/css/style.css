@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+
+}
+
+h3 {
+    text-transform:uppercase
+
+}
+
+.logBar {
+    margin: 2rem auto;
+    background-color: rgb(208, 221, 221);
+    flex-basis: 30%;
+    padding: 2rem;
+    text-align: center;
+    border: 0.1px solid rgba(0, 0, 0, 0.226);
+    border-radius: 30px;
+}
+
+.barra {
+    margin-top: 1rem;
+    width: 80%;
+    border: transparent;
+    height: 1rem;
+    padding: 0.6rem;
+}
+
+#cerca,
+#entra {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border:  transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+#cerca {
+    background-color: green;
+}
+
+#entra {
+    background-color: red;
+}
+
+.d-none {
+    display:none;
+}
