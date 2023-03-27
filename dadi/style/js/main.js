@@ -35,6 +35,13 @@ for (let x = 1; x <= 10; x++)  {
         x = 10
     }
 
+
  }
+
+ if( punteggioComputer>punteggioGiocatore) {
+    console.log ("HAI PERSO!!")
+}else {
+    console.log ("HAI VINTO!!")
+}
 
 
