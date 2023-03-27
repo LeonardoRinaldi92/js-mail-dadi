@@ -8,7 +8,7 @@ let partitegiocate = 0;
 
 
 for (let x = 1; x <= 10; x++)  {
-    
+
     let numeroGiocatore = (Math.floor(Math.random() * 6))+1;
     let numeroComputer = (Math.floor(Math.random() * 6))+1;
 
@@ -23,7 +23,6 @@ for (let x = 1; x <= 10; x++)  {
 
     } else {
        console.log  ("pareggio!");
-       x = x -1
     }
 
     partitegiocate = partitegiocate + 1;
