@@ -1,6 +1,4 @@
 let listaUtenti = ["leonardo@gmail.com", "salame@gmail.com", "boolean@gmail.com", "banana@gmail.com", "briscola@hotmail.com", "misonostufato@gmail.com"]
-
-console.log (listaUtenti[1]);
  
 document.getElementById("cerca").addEventListener('click', function() {
  
